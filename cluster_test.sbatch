@@ -11,6 +11,7 @@
 #SBATCH --output=cluster_test.out
 #SBATCH --error=cluster_test.err
 
+module load python/3.11.9
 module load tensorflow
 module load cudnn
 python cluster_test.py
